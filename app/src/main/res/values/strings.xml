@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">IAP_Project</string>
-    <string name="vendor_logo">Vendor Logo</string>
-    <string name="vendor">Vendor</string>
-    <string name="vendor_description">Description</string>
+    <string name="vendor_logo" translatable="false">Vendor Logo</string>
+    <string name="vendor" translatable="false">Vendor</string>
+    <string name="vendor_description" translatable="false">Description</string>
+    <string name="this_is_a_dummy_vendor_image">This is a dummy image</string>
+    <string name="supermarket">Supermarket</string>
+    <string name="description">Description</string>
+    <string name="product_icon">Product Icon</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Product price</string>
+    <string name="button_to_remove_an_item">Button to remove an Item</string>
+    <string name="button_to_add_an_item">Button to add an item</string>
 </resources>
