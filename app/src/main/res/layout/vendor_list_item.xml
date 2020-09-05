@@ -18,7 +18,9 @@
         android:paddingTop="8dp"
         android:paddingRight="8dp"
         android:paddingBottom="8dp"
-        app:cardElevation="4dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="6dp"
+        app:cardMaxElevation="6dp"
         app:cardUseCompatPadding="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +32,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="100dp"
+            android:background="@drawable/vendor_card_view_body">
 
             <ImageView
                 android:id="@+id/vendor_image_logo"
@@ -57,7 +60,7 @@
                 android:text="@string/vendor"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 app:layout_constraintStart_toEndOf="@+id/vendor_image_logo"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@id/vendor_image_logo" />
 
             <TextView
                 android:id="@+id/vendor_description"
@@ -69,7 +72,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="8dp"
                 android:text="@string/vendor_description"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/vendor_image_logo"
                 app:layout_constraintStart_toEndOf="@id/vendor_image_logo"
                 app:layout_constraintTop_toBottomOf="@id/vendor_name" />
 
