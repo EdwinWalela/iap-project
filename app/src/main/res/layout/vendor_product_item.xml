@@ -59,6 +59,18 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
             <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_quantity"
+                android:visibility="invisible"
+                android:background="@drawable/quantity_text_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/product_name"
+                app:layout_constraintTop_toTopOf="@id/product_name"
+                app:layout_constraintBottom_toBottomOf="@id/product_name"/>
+
+            <TextView
                 android:id="@+id/product_price"
                 style="@style/VendorDescription"
                 android:layout_width="wrap_content"

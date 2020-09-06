@@ -11,4 +11,6 @@
     <string name="product_price">Product price</string>
     <string name="button_to_remove_an_item">Button to remove an Item</string>
     <string name="button_to_add_an_item">Button to add an item</string>
+    <string name="product_quantity">1</string>
+    <string name="commit_order">Commit Order</string>
 </resources>
