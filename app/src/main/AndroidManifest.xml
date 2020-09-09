@@ -10,14 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".CartActivity"></activity>
-        <activity android:name=".VendorActivity" />
-        <activity android:name=".VendorDetailActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".VendorActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".VendorDetailActivity" />
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 

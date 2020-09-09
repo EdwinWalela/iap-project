@@ -2,15 +2,15 @@ package com.example.iap_project;
 
 public class Vendor {
     private String vendor_name;
-    private String vendor_icon;
-    private String vendor_image;
+    private int vendor_icon;
+    private int vendor_image;
     private String vendor_location;
     private int vendor_id;
     private String vendor_contact;
     private String vendor_latitude;
     private String vendor_longitude;
 
-    public Vendor(String vendor_name, String vendor_icon, String vendor_image,
+    public Vendor(String vendor_name, int vendor_icon, int vendor_image,
                   String vendor_location, int vendor_id, String vendor_contact,
                   String vendor_latitude, String vendor_longitude)
     {
@@ -32,19 +32,19 @@ public class Vendor {
         this.vendor_name = vendor_name;
     }
 
-    public String getVendor_icon() {
+    public int getVendor_icon() {
         return vendor_icon;
     }
 
-    public void setVendor_icon(String vendor_icon) {
+    public void setVendor_icon(int vendor_icon) {
         this.vendor_icon = vendor_icon;
     }
 
-    public String getVendor_image() {
+    public int getVendor_image() {
         return vendor_image;
     }
 
-    public void setVendor_image(String vendor_image) {
+    public void setVendor_image(int vendor_image) {
         this.vendor_image = vendor_image;
     }
 

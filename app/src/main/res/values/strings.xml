@@ -3,14 +3,48 @@
     <string name="vendor_logo" translatable="false">Vendor Logo</string>
     <string name="vendor" translatable="false">Vendor</string>
     <string name="vendor_description" translatable="false">Description</string>
-    <string name="this_is_a_dummy_vendor_image">This is a dummy image</string>
-    <string name="supermarket">Supermarket</string>
-    <string name="description">Description</string>
-    <string name="product_icon">Product Icon</string>
-    <string name="product_name">Product Name</string>
-    <string name="product_price">Product price</string>
-    <string name="button_to_remove_an_item">Button to remove an Item</string>
-    <string name="button_to_add_an_item">Button to add an item</string>
-    <string name="product_quantity">1</string>
-    <string name="commit_order">Commit Order</string>
+    <string name="this_is_a_dummy_vendor_image" translatable="false">This is a dummy image</string>
+    <string name="supermarket" translatable="false">Supermarket</string>
+    <string name="description" translatable="false">Description</string>
+    <string name="product_icon" translatable="false">Product Icon</string>
+    <string name="product_name" translatable="false">Product Name</string>
+    <string name="product_price" translatable="false">Product price</string>
+    <string name="button_to_remove_an_item" translatable="false">Button to remove an Item</string>
+    <string name="button_to_add_an_item" translatable="false">Button to add an item</string>
+    <string name="product_quantity" translatable="false">1</string>
+    <string name="commit_order" translatable="false">Commit Order</string>
+
+
+    <string-array name="vendor_names">
+        <item> Naivas </item>
+    </string-array>
+
+    <array name="vendor_icons">
+        <item>@drawable/vendor_logo</item>
+    </array>
+
+    <array name="vendor_image">
+        <item>@drawable/dummy_image</item>
+    </array>
+
+    <string-array name="vendor_location">
+        <item> Mountain View - Waiyaki way </item>
+    </string-array>
+
+    <string-array name="vendor_id">
+        <item> 1 </item>
+    </string-array>
+
+    <string-array name="vendor_contact">
+        <item> 0711111111 </item>
+    </string-array>
+
+    <string-array name="vendor_latitude">
+        <item> Naivas </item>
+    </string-array>
+
+    <string-array name="vendor_longitude">
+        <item> Naivas </item>
+    </string-array>
+
 </resources>
