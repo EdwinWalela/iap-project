@@ -16,6 +16,8 @@ public class VendorDetailActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private ProductAdapter mProductAdapter;
     private ArrayList<Product> mProductsData;
+    public Cart mCart;//declare a cart object
+    public ArrayList<Product> mCartItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +27,13 @@ public class VendorDetailActivity extends AppCompatActivity {
         ImageView vendorPicture = findViewById(R.id.imageView);
         vendorPicture.setImageResource(R.drawable.dummy_image);
 
+        //initialize the cart object
+        mCartItems = new ArrayList<>();
+        mCart = new Cart(0, mCartItems, 0,0, 0);
+
         mRecyclerView = findViewById(R.id.product_recycler_view);
         mProductsData = new ArrayList<>();
-        mProductAdapter = new ProductAdapter(mProductsData, this);
+        mProductAdapter = new ProductAdapter(mProductsData, this, mCart);
         mRecyclerView.setAdapter(mProductAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
