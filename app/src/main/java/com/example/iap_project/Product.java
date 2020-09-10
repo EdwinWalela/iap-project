@@ -4,14 +4,14 @@ public class Product {
 
     private int product_id;
     private String product_name;
-    private String product_photo;
+    private int product_photo;
     private String product_description;
     private int product_price;
     private int product_stock;
     private int product_store_id;
     private int product_quantity;
 
-    public Product(int product_id, String product_name, String product_photo,
+    public Product(int product_id, String product_name, int product_photo,
                    String product_description, int product_price, int product_stock,
                    int product_store_id)
     {
@@ -40,11 +40,11 @@ public class Product {
         this.product_name = product_name;
     }
 
-    public String getProduct_photo() {
+    public int getProduct_photo() {
         return product_photo;
     }
 
-    public void setProduct_photo(String product_photo) {
+    public void setProduct_photo(int product_photo) {
         this.product_photo = product_photo;
     }
 
