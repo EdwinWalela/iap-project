@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.login.LoginActivity">
+
+
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="204dp"
+        android:layout_height="163dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/all"
+
+        />
+
+    <EditText
+        android:id="@+id/emailA"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pic"
+        android:textColor="#070110"
+        android:paddingStart="8dp"
+        android:drawableStart="@drawable/ic_email"
+        android:paddingEnd="10dp"
+        android:background="@drawable/edit"
+        android:hint="@string/email_address"
+        android:layout_marginTop="100dp"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#18A4E3"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="8dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:layout_below="@+id/emailA"
+        android:textColor="#070110"
+        android:hint="@string/password"
+        android:drawableStart="@drawable/ic_key"
+        android:paddingStart="8dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:textColorHint="#18A4E3"
+        android:drawableLeft="@drawable/ic_key"
+        android:paddingLeft="8dp" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:text="@string/_continue"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/btn"
+        android:layout_marginTop="50dp"
+        android:textColor="#EAF2F3"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>

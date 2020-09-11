@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration">
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="204dp"
+        android:layout_height="163dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/all"
+
+        />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pic"
+        android:textColor="#070110"
+        android:paddingStart="8dp"
+        android:drawableStart="@drawable/ic_person"
+        android:paddingEnd="10dp"
+        android:background="@drawable/edit"
+        android:hint="@string/full_name"
+        android:layout_marginTop="40dp"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#18A4E3"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="8dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:paddingRight="10dp" />
+    <EditText
+        android:id="@+id/emailA"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fname"
+        android:textColor="#070110"
+        android:paddingStart="8dp"
+        android:drawableStart="@drawable/ic_email"
+        android:paddingEnd="10dp"
+        android:background="@drawable/edit"
+        android:hint="@string/email_address"
+        android:layout_marginTop="30dp"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#18A4E3"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="8dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:layout_below="@+id/emailA"
+        android:textColor="#070110"
+        android:hint="@string/password"
+        android:drawableStart="@drawable/ic_key"
+        android:paddingStart="8dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:textColorHint="#18A4E3"
+        android:drawableLeft="@drawable/ic_key"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/Cpassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:layout_below="@+id/password"
+        android:textColor="#070110"
+        android:hint="@string/confirm_password"
+        android:drawableStart="@drawable/ic_key"
+        android:paddingStart="8dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:textColorHint="#18A4E3"
+        android:drawableLeft="@drawable/ic_key"
+        android:paddingLeft="8dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Cpassword"
+        android:text="@string/register"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn"
+        android:textColor="#EAF2F3"
+        />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:layout_marginTop="20dp"
+        android:textColor="#18A4E3"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="@string/already_a_user_sign_in"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal" />
+
+
+</RelativeLayout>

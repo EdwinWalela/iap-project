@@ -13,6 +13,27 @@
     <string name="button_to_add_an_item" translatable="false">Button to add an item</string>
     <string name="product_quantity" translatable="false">1</string>
     <string name="commit_order" translatable="false">Commit Order</string>
+    <string name="full_name" translatable="false">full name</string>
+    <string name="log_in" translatable="false">log in</string>
+    <string name="_continue" translatable="false">continue</string>
+    <string name="don_t_have_an_account_sign_up" translatable="false">Don\'t have an account? Sign Up</string>
+    <string name="name_for_app" translatable="false">Name for App</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="email_address" translatable="false">Email Address</string>
+    <string name="title_activity_login" translatable="false">LoginActivity</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in" translatable="false">Sign in or register</string>
+    <string name="action_sign_in_short" translatable="false">Sign in</string>
+    <string name="welcome" translatable="false">"Welcome !"</string>
+    <string name="invalid_username" translatable="false">Not a valid username</string>
+    <string name="invalid_password" translatable="false">Password must be >5 characters</string>
+    <string name="login_failed" translatable="false">"Login failed"</string>
+    <string name="register" translatable="false">Register</string>
+    <string name="new_user_sign_up" translatable="false">New User? Sign Up!</string>
+    <string name="confirm_password" translatable="false">Confirm Password</string>
+    <string name="invalid_confirm_password" translatable="false">Password and Confirm Paasword should match</string>
+    <string name="already_a_user_sign_in" translatable="false">Already a user? Sign In</string>
 
 
     <string-array name="vendor_names">
