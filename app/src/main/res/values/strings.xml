@@ -13,6 +13,7 @@
     <string name="button_to_add_an_item" translatable="false">Button to add an item</string>
     <string name="product_quantity" translatable="false">1</string>
     <string name="commit_order" translatable="false">Commit Order</string>
+    <string name="view_cart">View cart</string>
 
 
     <string-array name="vendor_names">

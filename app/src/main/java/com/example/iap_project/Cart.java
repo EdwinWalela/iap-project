@@ -1,11 +1,14 @@
 package com.example.iap_project;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.ArrayList;
 
-public class Cart {
+public class Cart implements Parcelable {
 
     private int id;
-     ArrayList<Product> items;
+    public ArrayList<Product> items;
     private int total_price;
     private int item_count;
     private int user_id;
@@ -16,6 +19,15 @@ public class Cart {
         this.total_price = total_price;
         this.item_count = item_count;
         this.user_id = user_id;
+    }
+
+    private Cart (Parcel parcel){
+        id = parcel.readInt();
+        items = new ArrayList<>();
+        parcel.readTypedList(items, Product.CREATOR);
+        total_price = parcel.readInt();
+        item_count = parcel.readInt();
+        user_id = parcel.readInt();
     }
 
     public int getId() {
@@ -57,4 +69,32 @@ public class Cart {
     public void setUser_id(int user_id) {
         this.user_id = user_id;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(id);
+        dest.writeList(items);
+        dest.writeInt(total_price);
+        dest.writeInt(item_count);
+        dest.writeInt(user_id);
+
+    }
+
+    public static final Parcelable.Creator<Cart> CREATOR =
+            new Parcelable.Creator<Cart>(){
+                @Override
+                public Cart createFromParcel(Parcel source) {
+                    return new Cart(source);
+                }
+
+                @Override
+                public Cart[] newArray(int size) {
+                    return new Cart[size];
+                }
+            };
 }

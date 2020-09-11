@@ -1,6 +1,9 @@
 package com.example.iap_project;
 
-public class Product {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Product implements Parcelable {
 
     private int product_id;
     private String product_name;
@@ -22,6 +25,16 @@ public class Product {
         this.product_price = product_price;
         this.product_stock = product_stock;
         this.product_store_id = product_store_id;
+    }
+
+    private Product (Parcel parcel){
+        product_id =  parcel.readInt();
+        product_name = parcel.readString();
+        product_photo = parcel.readInt();
+        product_description = parcel.readString();
+        product_price = parcel.readInt();
+        product_stock = parcel.readInt();
+        product_store_id = parcel.readInt();
     }
 
     public int getProduct_id() {
@@ -89,4 +102,32 @@ public class Product {
     }
 
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(product_id);
+        dest.writeString(product_name);
+        dest.writeInt(product_photo);
+        dest.writeString(product_description);
+        dest.writeInt(product_price);
+        dest.writeInt(product_stock);
+        dest.writeInt(product_store_id);
+
+    }
+
+    public static final Parcelable.Creator<Product> CREATOR = new Parcelable.Creator<Product>(){
+        @Override
+        public Product createFromParcel(Parcel source) {
+            return new Product(source);
+        }
+
+        @Override
+        public Product[] newArray(int size) {
+            return new Product[size];
+        }
+    };
 }
